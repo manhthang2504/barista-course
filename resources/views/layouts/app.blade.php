@@ -202,7 +202,7 @@
                             <i class="bi bi-geo-alt-fill"></i> 14/7A Thân Nhân Trung, Phường Tân Bình, TP.HCM<br>
                             <i class="bi bi-telephone-fill"></i> 090 298 01 80<br>
                             <a class="text-[#8c6551] hover:text-[#6b4f2c]" href="https://facebook.com/charleswembleygroupsg/"><i class="bi bi-facebook"></i> https://www.facebook.com/charleswembleygroup/</a><br>
-                            <i class="bi bi-envelope"></i> Gmail.com (nhớ thay thế vào đây sau)
+                            <i class="bi bi-envelope"></i> info@charlesmwebley.com (nhớ thay thế vào đây sau)
                         </div>
                     </div>
                     <div class="md:col-span-4">
