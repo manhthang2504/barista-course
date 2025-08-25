@@ -86,23 +86,30 @@
     </script>
 </head>
 <body class="flex flex-col min-h-screen">
+    @php
+        $navTextColor = trim($__env->yieldContent('nav_text_color', 'white'));
+        $navIsWhite = strtolower($navTextColor) === 'white';
+        $linkClass = $navIsWhite ? 'text-white hover:text-gray-200' : 'text-black hover:text-gray-700';
+        $iconClass = $navIsWhite ? 'text-white' : 'text-black';
+        $logoClass = $navIsWhite ? 'h-full filter invert brightness-[1.2]' : 'h-full';
+    @endphp
     <header>
         <nav class="navbar-custom">
             <div class="container mx-auto px-4">
                 <div class="flex justify-between items-center">
                     <a href="#" class="flex items-center h-[90px] ml-[70px] md:ml-0">
-                        <img src="/storage/images/logo.svg" alt="Charles Wembley" class="h-full filter invert brightness-[1.2]">
+                        <img src="/storage/images/logo.svg" alt="Charles Wembley" class="{{ $logoClass }}">
                     </a>
                     <div class="hidden lg:block">
                         <ul class="flex space-x-6">
-                            <li><a href="#" class="text-xl text-white font-medium hover:text-gray-200">HOME</a></li>
-                            <li><a href="#" class="text-xl text-white font-medium hover:text-gray-200">COURSES</a></li>
-                            <li><a href="#" class="text-xl text-white font-medium hover:text-gray-200">SERVICE</a></li>
-                            <li><a href="#" class="text-xl text-white font-medium hover:text-gray-200">ABOUT US</a></li>
-                            <li><a href="#" class="text-xl text-white font-medium hover:text-gray-200">CONTACT US</a></li>
+                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">HOME</a></li>
+                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">COURSES</a></li>
+                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">SERVICE</a></li>
+                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">ABOUT US</a></li>
+                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">CONTACT US</a></li>
                         </ul>
                     </div>
-                    <button class="lg:hidden text-white" type="button" onclick="toggleMenu()">
+                    <button class="lg:hidden {{ $iconClass }}" type="button" onclick="toggleMenu()">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -110,18 +117,18 @@
                 </div>
                 <div id="mobile-menu" class="hidden lg:hidden bg-white/20 mt-2 rounded-md">
                     <div class="px-2 pt-2 pb-3 space-y-1 text-center">
-                        <a href="#" class="block px-3 py-2 text-white font-medium hover:text-gray-200">HOME</a>
-                        <a href="#" class="block px-3 py-2 text-white font-medium hover:text-gray-200">COURSES</a>
-                        <a href="#" class="block px-3 py-2 text-white font-medium hover:text-gray-200">SERVICE</a>
-                        <a href="#" class="block px-3 py-2 text-white font-medium hover:text-gray-200">ABOUT US</a>
-                        <a href="#" class="block px-3 py-2 text-white font-medium hover:text-gray-200">CONTACT US</a>
+                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">HOME</a>
+                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">COURSES</a>
+                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">SERVICE</a>
+                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">ABOUT US</a>
+                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">CONTACT US</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="flex-grow">
+    <main class="flex-grow pb-24">
         @yield('content')
     </main>
 
@@ -129,9 +136,12 @@
         <div class="container mx-auto px-4 pb-8">
             <div class="flex justify-center">
                 <div class="w-full lg:w-10/12">
-                    <div class="bg-white rounded-lg shadow-lg p-8 -mt-16 relative z-10">
-                        <h4 class="text-[#6b4f2c] text-2xl font-bold text-center mb-4">ĐĂNG KÝ ĐỂ ĐƯỢC TƯ VẤN MIỄN PHÍ!</h4>
-                        <div class="text-center text-gray-600 mb-6">
+                    <div
+                        class="-mt-16 after:from-[#B78E66] p-8 relative rounded-lg shadow-lg z-10"
+                    style="background: linear-gradient(90deg, #B78E66 0%, #A57D5D 17%, #8C6551 44%, #B78E66 100%)">
+                        <h4 class="text-white text-2xl font-bold text-center mb-2">ĐĂNG KÝ ĐỂ ĐƯỢC TƯ VẤN MIỄN
+                            PHÍ!</h4>
+                        <div class="text-center text-white uppercase italic mb-6">
                             Vui lòng điền thông tin để được tư vấn trực tiếp nhanh nhất!
                         </div>
                         <form>
@@ -188,7 +198,7 @@
             <div class="container mx-auto py-8 px-4">
                 <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-6">
                     <div class="md:col-span-3 flex justify-center md:justify-start mb-4 md:mb-0">
-                        <img src="/storage/images/logo_footer.png" alt="Charles Wembley" class="h-16">
+                        <img src="/storage/images/logo_footer.svg" alt="Charles Wembley" class="h-16">
                         <div class="flex items-center space-x-3 ml-4">
                             <a href="#" class="text-[#8c6551] hover:text-[#6b4f2c]"><i class="bi bi-facebook text-xl"></i></a>
                             <a href="#" class="text-[#8c6551] hover:text-[#6b4f2c]"><i class="bi bi-instagram text-xl"></i></a>
@@ -202,7 +212,7 @@
                             <i class="bi bi-geo-alt-fill"></i> 14/7A Thân Nhân Trung, Phường Tân Bình, TP.HCM<br>
                             <i class="bi bi-telephone-fill"></i> 090 298 01 80<br>
                             <a class="text-[#8c6551] hover:text-[#6b4f2c]" href="https://facebook.com/charleswembleygroupsg/"><i class="bi bi-facebook"></i> https://www.facebook.com/charleswembleygroup/</a><br>
-                            <i class="bi bi-envelope"></i> info@charlesmwebley.com (nhớ thay thế vào đây sau)
+                            <i class="bi bi-envelope"></i> info@charlesmwebley.com
                         </div>
                     </div>
                     <div class="md:col-span-4">
