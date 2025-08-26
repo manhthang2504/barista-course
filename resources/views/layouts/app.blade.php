@@ -50,6 +50,13 @@
             z-index: 2;
             background-color: #fff7ef;
         }
+        .tea-section {
+            background: url("/storage/images/tea_bg.svg") center center/cover no-repeat;
+            position: relative;
+            z-index: 2;
+            background-color: #f8f8f3;
+        }
+        
         .intro-section {
             background: url("/storage/images/banner_gioithieu.png") center center/cover no-repeat;
             position: relative;

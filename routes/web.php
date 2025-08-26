@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('general-course', function () {
     return view('general-course');
 });
+Route::get('tea-course', function () {
+    return view('tea-course');
+});
