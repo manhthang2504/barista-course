@@ -90,52 +90,82 @@
                     class="mb-8 object-contain drop-shadow" />
             </div>
             <h2 class="text-3xl md:text-4xl font-extrabold mb-10 text-left">
-                <span class="border-b-4 border-black pb-1"
-                    style="border-bottom-width: 0px; text-decoration: underline; text-underline-offset: 6px;">Nội dung khóa
-                    học</span>
+                    Nội dung khóa học
+            </h2>
+            <h2 class="text-2xl md:text-3xl font-extrabold mb-8 mt-16 text-left">
+                A. Matcha: Kiến thức trọng tâm-Xu hướng và ứng dụng
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-10 gap-x-2 text-center">
-                <!-- Row 1 -->
                 <div class="flex flex-col items-center">
-                    <img src="/storage/images/tea_book.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    <div class="font-bold mt-2 text-base md:text-lg">1. Kiến thức tổng quan về trà</div>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="/storage/images/tea_pot.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    <div class="font-bold mt-2 text-base md:text-lg">2. Hướng dẫn ủ các loại trà và pha chế trà<br
-                            class="hidden md:block">nguyên chất</div>
+                    {{-- <img src="/storage/images/matcha_production.svg"
+                        class="h-24 md:h-28 lg:h-28 object-contain mb-2" /> --}}
+                    <div class="font-bold mt-2 text-base md:text-lg">1. Quy trình sản xuất, cấp độ<br>và tiêu chuẩn chất
+                        lượng</div>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="/storage/images/pouring_tea.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    <div class="font-bold mt-2 text-base md:text-lg">3. Phân biệt trà sữa<br class="hidden md:block">truyền
-                        thống và hiện đại</div>
-                </div>
-                <!-- Row 2 -->
-                <div class="flex flex-col items-center">
-                    <img src="/storage/images/pot_and_kettle.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    <div class="font-bold mt-2 text-base md:text-lg">4. Ứng dụng pha trà<br class="hidden md:block">thủ công
-                        và pha máy</div>
+                    <img src="/storage/images/tea_leaves.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">2. Phân biệt các loại bột trà xanh<br>và cách lựa chọn
+                        matcha<br>cho từng ứng dụng</div>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="/storage/images/milk_tea.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    <div class="font-bold mt-2 text-base md:text-lg">5. Ứng dụng pha chế trà sữa</div>
+                    {{-- <img src="/storage/images/matcha_trend.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    --}}
+                    <div class="font-bold mt-2 text-base md:text-lg">3. Xu hướng matcha hiện nay</div>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="/storage/images/fruit_tea.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    <div class="font-bold mt-2 text-base md:text-lg">6. Ứng dụng pha trà trái cây</div>
+                    <img src="/storage/images/matcha_mixing.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">4. Hướng dẫn kỹ thuật đánh<br>matcha với bộ dụng cụ
+                        tiêu chuẩn</div>
                 </div>
-                <!-- Row 3 -->
                 <div class="flex flex-col items-center">
-                    <img src="/storage/images/topping.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    <div class="font-bold mt-2 text-base md:text-lg">7. Thực hành các loại topping</div>
+                    <img src="/storage/images/matcha_mixing2.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">5. Thực hành ứng dụng<br>kỹ thuật đánh matcha</div>
                 </div>
-                <div class="flex flex-col items-center col-span-1 md:col-span-2 lg:col-span-1">
-                    <img src="/storage/images/tea_menu.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    <div class="font-bold mt-2 text-base md:text-lg">8. Hướng dẫn cách xây dựng<br
-                            class="hidden md:block">menu trà sữa trong kinh doanh</div>
+                <div class="flex flex-col items-center">
+                    <img src="/storage/images/drink_and_cake.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">6. Thực hành món sáng tạo<br>với matcha</div>
                 </div>
+                <div class="flex flex-col items-center">
+                    <img src="/storage/images/matcha_jar.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">7. Phân tích đặc tính<br>hương vị và cân chỉnh<br>theo
+                        khẩu vị riêng</div>
+                </div>
+
             </div>
             <!-- End grid -->
+            <h2 class="text-2xl md:text-3xl font-extrabold mb-8 mt-16 text-left">
+                B. Cà Phê: Kiến thức trọng tâm - Xu hướng và ứng dụng
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-2 text-center">
+                <div class="flex flex-col items-center">
+                    <img src="/storage/images/coffee_paper.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">1. Tổng quan kiến thức về<br>Cà phê và trang thiết bị
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/storage/images/coffee_beans_stars.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">2. Các yếu tố ảnh hưởng<br>đến chất lượng cà phê</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/storage/images/coffee_beans_sampling.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">3. Cách lựa chọn loại cà phê<br>phù hợp với ứng dụng
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/storage/images/coffee_cup_book.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">4. Xu hướng cà phê hiện tại</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/storage/images/coffee_manual_tools.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    <div class="font-bold mt-2 text-base md:text-lg">5. Thực hành món ứng dụng<br>kết hợp với cà phê</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/storage/images/coffee_beans_spoon.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
+                    {{-- <img src="/storage/images/coffee_analysis.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" /> --}}
+                    <div class="font-bold mt-2 text-base md:text-lg">6. Phân tích đặc tính hương vị<br>và cân chỉnh theo
+                        khẩu vị riêng</div>
+                </div>
+            </div>
     </section>
     <div class="container p-4 bg-white mx-auto max-w-[1200px] pt-20 grid grid-cols-1 lg:grid-cols-12">
         <!-- Left heading -->
@@ -166,4 +196,5 @@
             </div>
         </div>
     </div>
+
 @endsection
