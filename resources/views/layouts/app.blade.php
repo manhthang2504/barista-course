@@ -57,6 +57,13 @@
             background-color: #f8f8f3;
         }
         
+        .matcha-section {
+            background: url("/storage/images/matchabg.svg") center center/cover no-repeat;
+            position: relative;
+            z-index: 2;
+            background-color: #ecf5ec;
+        }
+        
         .intro-section {
             background: url("/storage/images/banner_gioithieu.png") center center/cover no-repeat;
             position: relative;

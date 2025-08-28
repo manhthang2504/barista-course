@@ -12,3 +12,6 @@ Route::get('general-course', function () {
 Route::get('tea-course', function () {
     return view('tea-course');
 });
+Route::get('matcha-course', function () {
+    return view('matcha-course');
+});

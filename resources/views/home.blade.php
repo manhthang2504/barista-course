@@ -141,13 +141,14 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- Sự kiện 1 -->
+                {{-- TODO make small images for faster loading --}}
                 <div class="flex flex-col items-center">
                     <img src="/storage/images/img1.jpg" class="rounded-xl mb-2 w-[300px] h-[200px] object-cover" alt="">
                     <div class="text-white text-[1.1rem] font-bold">Food & Beverage Packaging Solutions Show in Mekong</div>
                 </div>
                 <!-- Sự kiện 2 -->
                 <div class="flex flex-col items-center">
-                    <img src="/storage/images/img2.jpg" class="rounded-xl mb-2 w-[300px] h-[200px] object-cover" alt="">
+                    <img src="/storage/images/img2_small.jpg" class="rounded-xl mb-2 w-[300px] h-[200px] object-cover" alt="">
                     <div class="text-white text-[1.1rem] font-bold">Workshop "Sắc thái đầu đông – Vị nở yên hương"</div>
                 </div>
                 <!-- Sự kiện 3 -->
