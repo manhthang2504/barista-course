@@ -109,18 +109,18 @@
     @endphp
     <header>
         <nav class="navbar-custom">
-            <div class="container mx-auto px-4">
+            <div class="container mx-auto px-4 max-w-[1200px]">
                 <div class="flex justify-between items-center">
                     <a href="#" class="flex items-center h-[90px] ml-[70px] md:ml-0">
                         <img src="/storage/images/logo.svg" alt="Charles Wembley" class="{{ $logoClass }}">
                     </a>
                     <div class="hidden lg:block">
                         <ul class="flex space-x-6">
-                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">HOME</a></li>
-                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">COURSES</a></li>
-                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">SERVICE</a></li>
-                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">ABOUT US</a></li>
-                            <li><a href="#" class="text-xl font-medium {{ $linkClass }}">CONTACT US</a></li>
+                            <li><a href="{{ url('/') }}" class="text-xl font-medium {{ $linkClass }}">HOME</a></li>
+                            <li><a href="{{ url('/general-course') }}" class="text-xl font-medium {{ $linkClass }}">GENERAL COURSE</a></li>
+                            <li><a href="{{ url('/tea-course') }}" class="text-xl font-medium {{ $linkClass }}">TEA COURSE</a></li>
+                            <li><a href="{{ url('/matcha-course') }}" class="text-xl font-medium {{ $linkClass }}">MATCHA COURSE</a></li>
+                            <li><a href="{{ url('/about-us') }}" class="text-xl font-medium {{ $linkClass }}">ABOUT US</a></li>
                         </ul>
                     </div>
                     <button class="lg:hidden {{ $iconClass }}" type="button" onclick="toggleMenu()">
@@ -131,11 +131,11 @@
                 </div>
                 <div id="mobile-menu" class="hidden lg:hidden bg-white/20 mt-2 rounded-md">
                     <div class="px-2 pt-2 pb-3 space-y-1 text-center">
-                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">HOME</a>
-                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">COURSES</a>
-                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">SERVICE</a>
-                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">ABOUT US</a>
-                        <a href="#" class="block px-3 py-2 font-medium {{ $linkClass }}">CONTACT US</a>
+                        <a href="{{ url('/') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">HOME</a>
+                        <a href="{{ url('/general-course') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">GENERAL COURSE</a>
+                        <a href="{{ url('/tea-course') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">TEA COURSE</a>
+                        <a href="{{ url('/matcha-course') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">MATCHA COURSE</a>
+                        <a href="{{ url('/about-us') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">ABOUT US</a>
                     </div>
                 </div>
             </div>

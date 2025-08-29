@@ -97,10 +97,7 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-10 gap-x-2 text-center">
                 <div class="flex flex-col items-center">
-                    {{-- <img src="/storage/images/matcha_production.svg"
-                        class="h-24 md:h-28 lg:h-28 object-contain mb-2" /> --}}
-                    <div class="font-bold mt-2 text-base md:text-lg">1. Quy trình sản xuất, cấp độ<br>và tiêu chuẩn chất
-                        lượng</div>
+                    <div class="mt-32 font-bold text-base md:text-lg">1. Quy trình sản xuất, cấp độ<br>và tiêu chuẩn chất lượng</div>
                 </div>
                 <div class="flex flex-col items-center">
                     <img src="/storage/images/tea_leaves.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
@@ -108,10 +105,10 @@
                         matcha<br>cho từng ứng dụng</div>
                 </div>
                 <div class="flex flex-col items-center">
-                    {{-- <img src="/storage/images/matcha_trend.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
-                    --}}
-                    <div class="font-bold mt-2 text-base md:text-lg">3. Xu hướng matcha hiện nay</div>
+                    <div class="font-bold mt-32 text-base md:text-lg">3. Xu hướng matcha hiện nay</div>
                 </div>
+            </div>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-y-10 gap-x-2 text-center">
                 <div class="flex flex-col items-center">
                     <img src="/storage/images/matcha_mixing.svg" class="h-24 md:h-28 lg:h-28 object-contain mb-2" />
                     <div class="font-bold mt-2 text-base md:text-lg">4. Hướng dẫn kỹ thuật đánh<br>matcha với bộ dụng cụ
