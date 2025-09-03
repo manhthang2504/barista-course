@@ -18,3 +18,6 @@ Route::get('matcha-course', function () {
 Route::get('about-us', function () {
     return view('about-us');
 });
+Route::get('cold-brew-berry-vai', function () {
+    return view('cold-brew-berry-vai');
+});
