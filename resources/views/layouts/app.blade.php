@@ -6,6 +6,8 @@
     <title>@yield('title', 'Barista')</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <!-- Swiper CSS -->
@@ -22,7 +24,7 @@
             background: transparent;
             position: absolute;
             width: 100%;
-            z-index: 10;
+            z-index: 100;
             top: 0;
             left: 0;
         }
@@ -56,14 +58,14 @@
             z-index: 2;
             background-color: #f8f8f3;
         }
-        
+
         .matcha-section {
             background: url("/storage/images/matchabg.svg") center center/cover no-repeat;
             position: relative;
             z-index: 2;
             background-color: #ecf5ec;
         }
-        
+
         .intro-section {
             background: url("/storage/images/banner_gioithieu.png") center center/cover no-repeat;
             position: relative;
@@ -115,12 +117,34 @@
                         <img src="/storage/images/logo.svg" alt="Charles Wembley" class="{{ $logoClass }}">
                     </a>
                     <div class="hidden lg:block">
-                        <ul class="flex space-x-6">
-                            <li><a href="{{ url('/') }}" class="text-xl font-medium {{ $linkClass }}">HOME</a></li>
-                            <li><a href="{{ url('/general-course') }}" class="text-xl font-medium {{ $linkClass }}">GENERAL COURSE</a></li>
-                            <li><a href="{{ url('/tea-course') }}" class="text-xl font-medium {{ $linkClass }}">TEA COURSE</a></li>
-                            <li><a href="{{ url('/matcha-course') }}" class="text-xl font-medium {{ $linkClass }}">MATCHA COURSE</a></li>
-                            <li><a href="{{ url('/about-us') }}" class="text-xl font-medium {{ $linkClass }}">ABOUT US</a></li>
+                        <ul class="flex space-x-6 items-center">
+                            <li><a href="{{ url('/') }}" class="text-xl font-medium {{ $linkClass }}">TRANG CHỦ</a></li>
+                            <li x-data="{ open: false }" class="relative"
+                                @mouseenter="open = true"
+                                @mouseleave="open = false"
+                            >
+                                <button
+                                    @click="open = !open"
+                                    @keydown.escape.window="open = false"
+                                    type="button"
+                                    class="text-xl font-medium {{ $linkClass }} flex items-center gap-1 focus:outline-none"
+                                    :aria-expanded="open ? 'true' : 'false'"
+                                >
+                                    KHÓA HỌC
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                                </button>
+                                <div
+                                    x-show="open"
+                                    x-transition
+                                    @click.away="open = false"
+                                    class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50 min-w-max"
+                                >
+                                    <a href="{{ url('/general-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">General Course</a>
+                                    <a href="{{ url('/tea-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Tea Course</a>
+                                    <a href="{{ url('/matcha-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Matcha Course</a>
+                                </div>
+                            </li>
+                            <li><a href="{{ url('/about-us') }}" class="text-xl font-medium {{ $linkClass }}">VỀ CHÚNG TÔI</a></li>
                         </ul>
                     </div>
                     <button class="lg:hidden {{ $iconClass }}" type="button" onclick="toggleMenu()">
@@ -132,9 +156,28 @@
                 <div id="mobile-menu" class="hidden lg:hidden bg-white/20 mt-2 rounded-md">
                     <div class="px-2 pt-2 pb-3 space-y-1 text-center">
                         <a href="{{ url('/') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">HOME</a>
-                        <a href="{{ url('/general-course') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">GENERAL COURSE</a>
-                        <a href="{{ url('/tea-course') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">TEA COURSE</a>
-                        <a href="{{ url('/matcha-course') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">MATCHA COURSE</a>
+                        <div x-data="{ open: false }" class="relative">
+                            <button
+                                @click="open = !open"
+                                @keydown.escape.window="open = false"
+                                type="button"
+                                class="block w-full text-left px-3 py-2 font-medium {{ $linkClass }} flex items-center justify-center gap-1"
+                                :aria-expanded="open ? 'true' : 'false'"
+                            >
+                                COURSES
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </button>
+                            <div
+                                x-show="open"
+                                x-transition
+                                @click.away="open = false"
+                                class="mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 min-w-max"
+                            >
+                                <a href="{{ url('/general-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">General Course</a>
+                                <a href="{{ url('/tea-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Tea Course</a>
+                                <a href="{{ url('/matcha-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Matcha Course</a>
+                            </div>
+                        </div>
                         <a href="{{ url('/about-us') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">ABOUT US</a>
                     </div>
                 </div>

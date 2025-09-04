@@ -27,3 +27,6 @@ Route::get('coffee-tropical', function () {
 Route::get('chuoi-nuong-lac-thom', function () {
     return view('chuoi-nuong-lac-thom');
 });
+Route::get('coffee-matcha-fusion', function () {
+    return view('coffee-matcha-fusion');
+});
