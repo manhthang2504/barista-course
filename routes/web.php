@@ -21,3 +21,6 @@ Route::get('about-us', function () {
 Route::get('cold-brew-berry-vai', function () {
     return view('cold-brew-berry-vai');
 });
+Route::get('coffee-tropical', function () {
+    return view('coffee-tropical');
+});

@@ -29,22 +29,22 @@
                         class="inline-block border border-gray-400 rounded-full px-6 py-1 mb-2 font-serif text-lg font-semibold bg-[#faf8f6]">
                         Nguyên liệu:</div>
                     <ul class="ml-4 text-base font-sans">
-                        <li class="flex justify-between items-center">
+                        <li class="flex justify-between">
                             <span>• Syrup Aumis Vải</span>
                             <span class="flex-1 border-b border-dotted border-gray-400 mx-2"></span>
                             <span>20ml</span>
                         </li>
-                        <li class="flex justify-between items-center">
+                        <li class="flex justify-between">
                             <span>• Soda Trà Loving</span>
                             <span class="flex-1 border-b border-dotted border-gray-400 mx-2"></span>
                             <span>100ml</span>
                         </li>
-                        <li class="flex justify-between items-center">
+                        <li class="flex justify-between">
                             <span>• Cà Phê Ủ Lạnh</span>
                             <span class="flex-1 border-b border-dotted border-gray-400 mx-2"></span>
                             <span>40ml</span>
                         </li>
-                        <li class="flex justify-between items-center">
+                        <li class="flex justify-between">
                             <span>• Đá Viên</span>
                             <span class="flex-1 border-b border-dotted border-gray-400 mx-2"></span>
                             <span>200gr</span>
