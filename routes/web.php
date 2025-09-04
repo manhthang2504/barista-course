@@ -24,3 +24,6 @@ Route::get('cold-brew-berry-vai', function () {
 Route::get('coffee-tropical', function () {
     return view('coffee-tropical');
 });
+Route::get('chuoi-nuong-lac-thom', function () {
+    return view('chuoi-nuong-lac-thom');
+});
