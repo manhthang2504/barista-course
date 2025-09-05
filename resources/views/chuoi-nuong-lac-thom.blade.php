@@ -22,7 +22,7 @@
             </div>
             <!-- Content -->
             <div class="flex-1">
-                <h1 class="font-serif text-3xl md:text-4xl font-extrabold mb-6 mt-2 md:mt-0">Chuối Nướng Lạc Thơm</h1>
+                <h1 class="italic text-3xl md:text-4xl font-bold mb-6 mt-2 md:mt-0">Chuối Nướng Lạc Thơm</h1>
                 <!-- Ingredients -->
                 <div class="mb-6">
                     <div class="inline-block border border-gray-400 rounded-full px-6 py-1 mb-2 font-serif text-lg font-semibold bg-[#faf8f6]">

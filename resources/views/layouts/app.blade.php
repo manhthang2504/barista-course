@@ -144,6 +144,32 @@
                                     <a href="{{ url('/matcha-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Matcha Course</a>
                                 </div>
                             </li>
+                            <li x-data="{ open: false }" class="relative"
+                                @mouseenter="open = true"
+                                @mouseleave="open = false"
+                            >
+                                <button
+                                    @click="open = !open"
+                                    @keydown.escape.window="open = false"
+                                    type="button"
+                                    class="text-xl font-medium {{ $linkClass }} flex items-center gap-1 focus:outline-none"
+                                    :aria-expanded="open ? 'true' : 'false'"
+                                >
+                                    CÔNG THỨC
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                                </button>
+                                <div
+                                    x-show="open"
+                                    x-transition
+                                    @click.away="open = false"
+                                    class="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg z-50 min-w-max"
+                                >
+                                    <a href="{{ url('/cold-brew-berry-vai') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Cold Brew Berry Vải</a>
+                                    <a href="{{ url('/coffee-tropical') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Coffee Tropical</a>
+                                    <a href="{{ url('/coffee-matcha-fusion') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Coffee Matcha Fusion</a>
+                                    <a href="{{ url('/chuoi-nuong-lac-thom') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Chuối Nướng Lạc Thơm</a>
+                                </div>
+                            </li>
                             <li><a href="{{ url('/about-us') }}" class="text-xl font-medium {{ $linkClass }}">VỀ CHÚNG TÔI</a></li>
                         </ul>
                     </div>
@@ -176,6 +202,29 @@
                                 <a href="{{ url('/general-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">General Course</a>
                                 <a href="{{ url('/tea-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Tea Course</a>
                                 <a href="{{ url('/matcha-course') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Matcha Course</a>
+                            </div>
+                        </div>
+                        <div x-data="{ open: false }" class="relative mt-1">
+                            <button
+                                @click="open = !open"
+                                @keydown.escape.window="open = false"
+                                type="button"
+                                class="block w-full text-left px-3 py-2 font-medium {{ $linkClass }} flex items-center justify-center gap-1"
+                                :aria-expanded="open ? 'true' : 'false'"
+                            >
+                                CÔNG THỨC
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </button>
+                            <div
+                                x-show="open"
+                                x-transition
+                                @click.away="open = false"
+                                class="mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 min-w-max"
+                            >
+                                <a href="{{ url('/cold-brew-berry-vai') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Cold Brew Berry Vải</a>
+                                <a href="{{ url('/coffee-tropical') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Coffee Tropical</a>
+                                <a href="{{ url('/coffee-matcha-fusion') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Coffee Matcha Fusion</a>
+                                <a href="{{ url('/chuoi-nuong-lac-thom') }}" class="block px-5 py-3 text-base text-black hover:bg-gray-100">Chuối Nướng Lạc Thơm</a>
                             </div>
                         </div>
                         <a href="{{ url('/about-us') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">ABOUT US</a>
