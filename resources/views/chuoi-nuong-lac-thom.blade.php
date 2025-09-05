@@ -4,7 +4,6 @@
 @section('nav_text_color', 'black')
 
 @section('content')
-
     <section class="relative overflow-hidden">
         <!-- Left SVG background -->
         <img src="/storage/images/flower_background_left.svg" alt="" aria-hidden="true"
