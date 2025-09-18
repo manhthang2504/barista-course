@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegistrationController;
 
 Route::get('/', function () {
     return view('home');
@@ -30,3 +31,5 @@ Route::get('chuoi-nuong-lac-thom', function () {
 Route::get('coffee-matcha-fusion', function () {
     return view('coffee-matcha-fusion');
 });
+
+Route::post('registrations', [RegistrationController::class, 'store'])->name('registrations.store');

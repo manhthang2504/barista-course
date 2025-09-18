@@ -250,52 +250,7 @@
                         <div class="text-center text-white uppercase italic mb-6">
                             Vui lòng điền thông tin để được tư vấn trực tiếp nhanh nhất!
                         </div>
-                        <form>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Nhập họ tên của bạn*" required>
-                                </div>
-                                <div>
-                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Nhập số điện thoại* (ví dụ: 0900000000)" required>
-                                </div>
-                                <div>
-                                    <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required>
-                                        <option selected disabled>Chọn chuyên ngành học*</option>
-                                        <option>Barista</option>
-                                        <option>Pha chế tổng hợp</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required>
-                                        <option selected disabled>Chọn khóa học*</option>
-                                        <option>Barista Coffee</option>
-                                        <option>Barista Tổng hợp</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required>
-                                        <option selected disabled>Chọn thời gian tư vấn*</option>
-                                        <option>Sáng</option>
-                                        <option>Chiều</option>
-                                        <option>Tối</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Nhập email của bạn*" required>
-                                </div>
-                                <div>
-                                    <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required>
-                                        <option selected disabled>Chọn tỉnh thành của bạn*</option>
-                                        <option>Hà Nội</option>
-                                        <option>TP. Hồ Chí Minh</option>
-                                        <option>Đà Nẵng</option>
-                                    </select>
-                                </div>
-                                <div class="flex items-end">
-                                    <button type="submit" class="w-full px-4 py-2 bg-[#6b4f2c] text-white font-bold text-xl rounded-lg hover:bg-[#5d4424]">ĐĂNG KÝ</button>
-                                </div>
-                            </div>
-                        </form>
+                        @include('components.footer-registration-form')
                     </div>
                 </div>
             </div>
