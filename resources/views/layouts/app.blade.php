@@ -171,6 +171,7 @@
                                 </div>
                             </li>
                             <li><a href="{{ url('/about-us') }}" class="text-xl font-medium {{ $linkClass }}">VỀ CHÚNG TÔI</a></li>
+{{--                            <li><a href="{{ route('registrations.index') }}" class="text-xl font-medium {{ $linkClass }}">HỌC VIÊN</a></li>--}}
                         </ul>
                     </div>
                     <button class="lg:hidden {{ $iconClass }}" type="button" onclick="toggleMenu()">
@@ -182,6 +183,7 @@
                 <div id="mobile-menu" class="hidden lg:hidden bg-white/20 mt-2 rounded-md">
                     <div class="px-2 pt-2 pb-3 space-y-1 text-center">
                         <a href="{{ url('/') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">HOME</a>
+{{--                        <a href="{{ route('registrations.index') }}" class="block px-3 py-2 font-medium {{ $linkClass }}">HỌC VIÊN</a>--}}
                         <div x-data="{ open: false }" class="relative">
                             <button
                                 @click="open = !open"
@@ -250,7 +252,9 @@
                         <div class="text-center text-white uppercase italic mb-6">
                             Vui lòng điền thông tin để được tư vấn trực tiếp nhanh nhất!
                         </div>
-                        @include('components.footer-registration-form')
+                        @if (! View::hasSection('hide_footer_registration_form'))
+                            @include('components.footer-registration-form')
+                        @endif
                     </div>
                 </div>
             </div>

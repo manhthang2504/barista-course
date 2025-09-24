@@ -7,6 +7,17 @@ use Illuminate\Http\Request;
 
 class RegistrationController extends Controller
 {
+    public function index()
+    {
+        $registrations = Registration::latest()->paginate(15);
+        return view('registrations.index', compact('registrations'));
+    }
+
+    public function create()
+    {
+        return view('registrations.create');
+    }
+
     public function store(Request $request)
     {
         $data = $request->validate([
@@ -21,6 +32,13 @@ class RegistrationController extends Controller
 
         Registration::create($data);
 
-        return back()->with('success', 'Đăng ký của bạn đã được gửi. Chúng tôi sẽ liên hệ sớm nhất!');
+        return redirect()->route('registrations.result')
+            ->with('success', 'Đăng ký của bạn đã được gửi. Chúng tôi sẽ liên hệ sớm nhất!');
+    }
+
+    public function result()
+    {
+        // Dedicated result page (thank you / confirmation)
+        return view('registrations.result');
     }
 }

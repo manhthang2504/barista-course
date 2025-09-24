@@ -32,4 +32,7 @@ Route::get('coffee-matcha-fusion', function () {
     return view('coffee-matcha-fusion');
 });
 
+Route::get('registrations', [RegistrationController::class, 'index'])->name('registrations.index');
+Route::get('registrations/create', [RegistrationController::class, 'create'])->name('registrations.create');
 Route::post('registrations', [RegistrationController::class, 'store'])->name('registrations.store');
+Route::get('registrations/result', [RegistrationController::class, 'result'])->name('registrations.result');

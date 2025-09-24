@@ -11,7 +11,7 @@
             <div class="text-[4.5rem] font-bold text-white leading-tight mb-2 font-montserrat md:text-[3.5rem]">BARISTA</div>
             <div class="text-[4.5rem] font-bold text-white mb-2 font-montserrat md:text-[3.5rem]">TỔNG HỢP</div>
             <div class="text-[30px] font-bold text-white mb-8 font-montserrat italic md:text-[1.5rem]">Vững nền tảng tạo chất riêng</div>
-            <a href="#" class="inline-block px-10 py-3 bg-[#e74c3c] text-white font-bold text-[44px] rounded-[30px] shadow-lg transition hover:bg-[#c0392b] font-roboto md:text-[1.5rem] md:px-5 md:py-2.5">REGISTER NOW!</a>
+            <a href="{{ route('registrations.create') }}" class="inline-block px-10 py-3 bg-[#e74c3c] text-white font-bold text-[44px] rounded-[30px] shadow-lg transition hover:bg-[#c0392b] font-roboto md:text-[1.5rem] md:px-5 md:py-2.5">REGISTER NOW!</a>
         </div>
     </section>
 
@@ -28,7 +28,7 @@
                     <div class="p-6 text-center">
                         <h5 class="font-bold mb-2">BARISTA (COFFEE)</h5>
                         <div class="mb-2 font-bold text-primary">8.000.000VND</div>
-                        <a href="#" class="inline-block px-6 py-2 bg-primary text-white rounded-[20px] border-2 border-primary hover:bg-primary/90">ĐĂNG KÝ HỌC</a>
+                        <a href="{{ route('registrations.create') }}" class="inline-block px-6 py-2 bg-primary text-white rounded-[20px] border-2 border-primary hover:bg-primary/90">ĐĂNG KÝ HỌC</a>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                     <div class="p-6 text-center">
                         <h5 class="font-bold mb-2">BARISTA TỔNG HỢP</h5>
                         <div class="mb-2 font-bold text-primary">8.000.000VND</div>
-                        <a href="#" class="inline-block px-6 py-2 bg-primary text-white rounded-[20px] border-2 border-primary hover:bg-primary/90">ĐĂNG KÝ HỌC</a>
+                        <a href="{{ route('registrations.create') }}" class="inline-block px-6 py-2 bg-primary text-white rounded-[20px] border-2 border-primary hover:bg-primary/90">ĐĂNG KÝ HỌC</a>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
                     <div class="p-6 text-center">
                         <h5 class="font-bold mb-2">BARISTA (COFFEE)</h5>
                         <div class="mb-2 font-bold text-primary">8.000.000VND</div>
-                        <a href="#" class="inline-block px-6 py-2 bg-primary text-white rounded-[20px] border-2 border-primary hover:bg-primary/90">ĐĂNG KÝ HỌC</a>
+                        <a href="{{ route('registrations.create') }}" class="inline-block px-6 py-2 bg-primary text-white rounded-[20px] border-2 border-primary hover:bg-primary/90">ĐĂNG KÝ HỌC</a>
                     </div>
                 </div>
             </div>
