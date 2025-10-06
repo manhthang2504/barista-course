@@ -1,8 +1,11 @@
 ﻿@php
-    $majors = ['Barista', 'Pha chế tổng hợp'];
+    $majors = [
+        // 'Barista', 
+        'Pha chế tổng hợp'
+    ];
     $courses = ['Barista Coffee', 'Barista Tổng hợp'];
     $times = ['Sáng', 'Chiều', 'Tối'];
-    $cities = ['Hà Nội', 'TP. Hồ Chí Minh', 'Đà Nẵng'];
+    $cities = ['Hà Nội', 'TP. Hồ Chí Minh', 'Đà Nẵng', 'Others'];
 @endphp
 
 @if(session('success'))
@@ -38,14 +41,14 @@
                 @endforeach
             </select>
         </div>
-        <div>
+        {{-- <div>
             <select name="course" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required>
                 <option value="" disabled {{ old('course') ? '' : 'selected' }}>Chọn khóa học*</option>
                 @foreach($courses as $c)
                     <option value="{{ $c }}" {{ old('course') === $c ? 'selected' : '' }}>{{ $c }}</option>
                 @endforeach
-            </select>
-        </div>
+            </select> 
+        </div> --}}
         <div>
             <select name="time_preference" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" required>
                 <option value="" disabled {{ old('time_preference') ? '' : 'selected' }}>Chọn thời gian tư vấn*</option>
@@ -65,7 +68,7 @@
                 @endforeach
             </select>
         </div>
-        <div class="flex items-end">
+        <div class="flex items-end md:col-span-2">
             <button type="submit" class="w-full px-4 py-2 bg-[#6b4f2c] text-white font-bold text-xl rounded-lg hover:bg-[#5d4424]">ĐĂNG KÝ</button>
         </div>
     </div>
