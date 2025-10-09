@@ -9,7 +9,7 @@
             <div id="barista-course-hero" class="container max-w-[1200px] mt-20 mx-auto">
                 <div class="relative text-left">
                     <div class="font-medium text-3xl text-black mb-4">KHÓA HỌC</div>
-                    <div class="text-[#4d844d] text-7xl font-extrabold uppercase font-montserrat">CHUYÊN ĐỀ MATCHA - COFFEE
+                    <div class="text-[##6F4E37] text-7xl font-extrabold uppercase font-montserrat">CHUYÊN ĐỀ BARISTA
                     </div>
                     <div class="text-black text-[2.5rem] font-normal italic mt-2 mb-8">Xu Hướng Dẫn Lối - Doanh Thu Dẫn Đầu
                     </div>

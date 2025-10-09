@@ -143,7 +143,7 @@
                     <!-- 4. Thức uống đá xay -->
                     <div>
                         <div class="flex justify-center">
-                            <img src="/storage/images/frappucino.png" alt="Thức uống đá xay"
+                            <img src="/storage/images/frappucino_2.png" alt="Thức uống đá xay"
                                 class="h-40 object-contain drop-shadow" />
                         </div>
                         <h3 class="mt-4 text-xl font-extrabold">4. Thức uống đá xay</h3>
@@ -176,7 +176,7 @@
                     <!-- 6. Chiết xuất espresso -->
                     <div>
                         <div class="flex justify-center">
-                            <img src="/storage/images/espresso.png" alt="Chiết xuất espresso"
+                            <img src="/storage/images/espresso_cup.png" alt="Chiết xuất espresso"
                                 class="h-40 object-contain drop-shadow" />
                         </div>
                         <h3 class="mt-4 text-xl font-extrabold">6. Chiết xuất espresso</h3>

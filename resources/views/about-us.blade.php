@@ -4,9 +4,9 @@
 @section('nav_text_color', 'black')
 
 @section('content')
-<section class="w-full mt-24" style="background: #F5E6D7; border-bottom: 30px solid #A97C50; border-top: 30px solid #A97C50;">
-    <div class="max-w-[1200px] mx-auto px-4 py-8">
-        <h1 class="text-4xl font-extrabold text-black py-6">Chúng tôi</h1>
+<section class="w-full h-24 mt-28" style="background: #F5E6D7; border-bottom: 12px solid #A97C50; border-top: 12px solid #A97C50;">
+    <div class="max-w-[1100px] mx-auto px-1 py-4">
+        <h1 class="text-4xl font-extrabold text-black py-4" >CHÚNG TÔI</h1>
     </div>
 </section>
 
@@ -45,12 +45,12 @@
             nguyên liệu đồ uống của chúng tôi trải dài khắp các vùng miền tại Việt Nam.
         </div>
         <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-            <img src="/storage/images/aiya_logo.png" alt="Charles Wembley partners" class="object-contain rounded w-full h-12" />
-            <img src="/storage/images/aumis_logo.svg" alt="Charles Wembley partners" class="object-contain rounded w-full h-12" />
-            <img src="/storage/images/itis_logo.svg" alt="Charles Wembley partners" class="object-contain rounded w-full h-12" />
-            <img src="/storage/images/savo_logo.svg" alt="Charles Wembley partners" class="object-contain rounded w-full h-12" />
-            <img src="/storage/images/urnex_logo.png" alt="Charles Wembley partners" class="object-contain rounded w-full h-12" />
-            <img src="/storage/images/zeta_logo.png" alt="Charles Wembley partners" class="object-contain rounded w-full h-12" />
+            <img src="/storage/images/aiya_logo.png" alt="Charles Wembley partners" class="object-contain rounded w-full h-11" />
+            <img src="/storage/images/aumis_logo.svg" alt="Charles Wembley partners" class="object-contain rounded w-full h-11" />
+            <img src="/storage/images/itis_logo.svg" alt="Charles Wembley partners" class="object-contain rounded w-full h-11" />
+            <img src="/storage/images/savo_logo.svg" alt="Charles Wembley partners" class="object-contain rounded w-full h-14" />
+            <img src="/storage/images/urnex_logo.png" alt="Charles Wembley partners" class="object-contain rounded w-full h-14" />
+            <img src="/storage/images/zeta_logo.png" alt="Charles Wembley partners" class="object-contain rounded w-full h-14" />
         </div>
     </div>
 </section>

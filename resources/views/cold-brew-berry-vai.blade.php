@@ -16,9 +16,9 @@
             class="hidden md:block absolute right-0 top-0 h-full w-auto z-0 opacity-10" style="min-width:180px;" />
         <div class="relative max-w-[1200px] mx-auto px-4 pt-36  flex flex-col md:flex-row gap-10 items-start z-10">
             <!-- Image -->
-            <div class="flex-shrink-0 flex justify-center w-full md:w-[320px]">
+            <div class="flex-shrink-0 flex justify-center w-full md:w-[360px]">
                 <img src="/storage/images/berry_vai.png" alt="Cold Brew Berry Vải"
-                    class="rounded-lg w-[260px] h-[340px] object-cover bg-[#f8f6f4]" />
+                    class="rounded-lg w-[360px] h-[420px]" />
             </div>
             <!-- Content -->
             <div class="flex-1">
