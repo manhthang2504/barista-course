@@ -114,7 +114,7 @@
     <div class="container mx-auto px-4 max-w-[1200px]">
       <div class="flex justify-between items-center">
         <a href="#" class="flex items-center h-[90px] ml-[70px] md:ml-0">
-          <img src="/storage/images/logo.svg" alt="Charles Wembley" class="{{ $logoClass }}">
+          <img src="/storage/images/logo_footer.svg" alt="Charles Wembley" class="{{ $logoClass }}">
         </a>
 
         <!-- Desktop nav -->

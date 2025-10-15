@@ -83,31 +83,45 @@
 
 
     <!-- End Section: Đào tạo pha chế đồ uống chuyên nghiệp -->
-    <!-- Section: Giới thiệu lớp học pha chế -->
-    <section class="py-12 intro-section">
+             <!-- Section: Giới thiệu lớp học pha chế -->
+        <section class="py-12 intro-section">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div class="p-6 bg-[#e8dfcf] rounded-[20px] shadow-md">
-                    <div class="mb-2 uppercase text-[#a88c6b] font-semibold ml-10 text-base">NÓI VỀ CHÚNG TÔI</div>
-                    <h3 class="font-bold mb-3 text-[3rem] text-[#8c6551] ml-10">LỚP HỌC PHA CHẾ <br>CHARLES WEMBLEY</h3>
-                    <div class="text-[#8c6551] text-[1.2rem] leading-relaxed ml-10 w-[90%]">
-                        Khóa học đào tạo toàn diện kỹ năng pha chế, cung cấp hơn 200 công thức từ 9 nhóm đồ uống: trà
-                        trái cây, trà sữa, cà phê truyền thống và hiện đại, detox, soda, đồ uống nóng, sinh tố, đá xay
-                        và kem tươi; cùng kiến thức kinh doanh đồ uống quan trọng, cập nhật xu hướng thị trường hiện
-                        nay.<br><br>
-                        Đây cũng là nơi tạo nên những khóa học được đông đảo học viên lựa chọn và lấy cảm hứng nhất tại
-                        Vietblend!<br><br>
-                        Phù hợp với những ai mong muốn mở quán kinh doanh đồ uống, chủ quán, quản lý, nhân viên quán cà
-                        phê, hút khách; đặc biệt trở thành pha chế chuyên, muốn tìm kiếm cơ hội việc làm trong ngành,...
-                    </div>
-                </div>
-                <div class="relative rounded-[16px] overflow-hidden shadow-lg min-h-[320px]">
-                    <img src="/storage/images/gioithieu.png" alt="Coffee line" class="w-full h-full object-cover min-h-[320px]">
+            <!-- items-start để 2 cột không ép cao bằng nhau; gap lớn hơn cho thoáng -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            
+            <!-- TEXT: tăng padding, bỏ ml-10/w-[90%] gây “bó” nội dung, cho line-height thoáng -->
+            <div class="bg-[#e8dfcf] rounded-[20px] shadow-md p-6 md:p-8 lg:p-10">
+                <div class="mb-2 uppercase text-[#a88c6b] font-semibold text-base">NÓI VỀ CHÚNG TÔI</div>
+
+                <h3 class="font-bold mb-4 text-[#8c6551] leading-tight
+                        text-3xl md:text-5xl">
+                LỚP HỌC PHA CHẾ <br> CHARLES WEMBLEY
+                </h3>
+
+                <div class="text-[#8c6551] text-[1.05rem] md:text-[1.15rem] leading-relaxed space-y-4">
+                ☕ Trong bất kỳ khóa học nào, chất lượng giảng viên đôi khi sẽ ảnh hưởng đến 60% quyết định theo học của bạn. Bởi lẽ theo quan niệm của nhiều người, thầy giỏi thì trò giỏi, và cũng chỉ có những người thầy giỏi mới có đủ kỹ năng, kinh nghiệm và trải nghiệm để dẫn dắt học viên của mình.
+                <br><br>
+                🌟 Tại 𝐂𝐡𝐚𝐫𝐥𝐞𝐬 𝐖𝐞𝐦𝐛𝐥𝐞𝐲 𝐀𝐜𝐚𝐝𝐞𝐦𝐲, giảng viên Huyền Trương là người có thể đáp ứng đầy đủ các tiêu chí của một người thầy giỏi. Ngoài kỹ năng chuyên môn đã được đã được trui rèn qua nhiều chương trình đào tạo barista danh tiếng, chị Huyền Trương còn có sự am hiểu sâu sắc về các loại nguyên liệu cũng như văn hóa đồ uống của nhiều nước trên thế giới.
+                <br><br>
+                💯 Song song đó, chị Huyền cũng có rất nhiều kinh nghiệm trong việc set up quán cà phê, từ mô hình vừa và nhỏ cho đến các tiệm lớn. Đây đều là những giá trị được đúc kết nhờ những buổi làm việc cùng các chuỗi lớn Highlands Coffee, Phúc Long hay Starbucks. Với những ưu điểm kể trên, liệu mọi người đã hiểu hơn về giảng viên của lớp và sẵn sàng để tham gia khóa học 𝐏𝐫𝐨𝐟𝐞𝐬𝐬𝐢𝐨𝐧𝐚𝐥 𝐁𝐚𝐫𝐢𝐬𝐭𝐚 𝐂𝐥𝐚𝐬𝐬?
                 </div>
             </div>
-        </div>
-    </section>
 
+            <!-- VIDEO: cố định tỉ lệ 16:9 để không “đè” chiều cao text; không đặt height cố định -->
+            <div class="relative rounded-[16px] overflow-hidden shadow-lg aspect-[16/9] min-h-[340px]">
+                <video class="w-full h-full object-cover"
+                    autoplay muted loop playsinline
+                    poster="/storage/images/DSC02933.jpg" preload="metadata">
+                <source src="/storage/images/Video_gioi_thieu.mp4" type="video/mp4" />
+                Trình duyệt của bạn không hỗ trợ phát video.
+                </video>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- End Section: Giới thiệu lớp học pha chế -->
    <!-- Section: Cơ sở vật chất hiện đại -->
         <div class="bg-white py-8">
           <!-- Băng rôn full width -->
