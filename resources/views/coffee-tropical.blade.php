@@ -15,9 +15,9 @@
             class="hidden md:block absolute right-0 top-0 h-full w-auto z-0 opacity-10" style="min-width:180px;" />
         <div class="relative max-w-[1200px] mx-auto px-4 pt-36 flex flex-col md:flex-row gap-10 items-start z-10">
             <!-- Image -->
-            <div class="flex-shrink-0 flex justify-center w-full md:w-[320px]">
+            <div class="flex-shrink-0 flex justify-center w-full md:w-[350px]">
                 <img src="/storage/images/coffee_tropical.png" alt="Coffee Tropical"
-                    class="rounded-lg h-[386px]  bg-[#f8f6f4]" />
+                    class="rounded-lg h-[360px] " />
             </div>
             <!-- Content -->
             <div class="flex-1">

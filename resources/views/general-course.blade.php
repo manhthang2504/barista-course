@@ -9,13 +9,13 @@
             <div id="barista-course-hero" class="container max-w-[1200px] mt-20 mx-auto">
                 <div class="relative text-left">
                     <div class="text-black text-2xl font-normal">KHÓA HỌC</div>
-                    <div class="text-[#704D32] text-5xl font-bold uppercase font-montserrat">BARISTA TỔNG HỢP</div>
+                    <div class="text-[#704D32] text-5xl font-bold uppercase font-montserrat">TỔNG HỢP THỰC CHIẾN</div>
                     <div class="text-black text-[2rem] font-normal italic">Vững nền tảng tạo chất riêng</div>
                     <a id="register-warm" href="#"
                         class="[box-shadow:4.89px_4.89px_6.98px_rgba(0,0,0,0.25)] bg-[linear-gradient(90deg,#FF6365_0%,#F4585D_5%,#DB414B_18%,#FF904F_100%)] font-medium inline-block left-[19.62%] px-8 py-2 right-[64.23%] text-2xl text-white uppercase">Đăng
                         ký học</a>
                     <p class="italic mt-6">
-                        *Khóa học barista tổng hợp diễn ra trong 8 Buổi học x 3h mỗi buổi.
+                        *Khóa học Tổng hợp thực chiến diễn ra trong 8 Buổi học x 3h mỗi buổi.
                     </p>
                     <p class="italic">
                         Hãy đảm bảo bạn sắp xếp được thời gian.
@@ -83,10 +83,14 @@
         </section>
         <section class="mt-20" style="background-color: #FFF7EF">
             <div class="p-4 container mx-auto max-w-[1200px] pt-20">
-                <div>
-                    <img src="/storage/images/barista_mixing.jpg" alt="Barista mixing cocktail"
-                        class="mb-8 object-contain drop-shadow" />
-                </div>
+                <div class="relative rounded-[16px] overflow-hidden shadow-lg aspect-[16/9] min-h-[340px]">
+                <video class="w-full h-full object-cover"
+                    autoplay muted loop playsinline
+                    poster="/storage/images/DSC02933.jpg" preload="metadata">
+                <source src="/storage/images/Video_gioi_thieu.mp4" type="video/mp4" />
+                Trình duyệt của bạn không hỗ trợ phát video.
+                </video>
+            </div>
                 <h2 class="text-3xl md:text-4xl font-extrabold mb-8">Nội dung khóa học</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
@@ -143,7 +147,7 @@
                     <!-- 4. Thức uống đá xay -->
                     <div>
                         <div class="flex justify-center">
-                            <img src="/storage/images/frappucino.png" alt="Thức uống đá xay"
+                            <img src="/storage/images/frappucino_2.png" alt="Thức uống đá xay"
                                 class="h-40 object-contain drop-shadow" />
                         </div>
                         <h3 class="mt-4 text-xl font-extrabold">4. Thức uống đá xay</h3>
@@ -176,7 +180,7 @@
                     <!-- 6. Chiết xuất espresso -->
                     <div>
                         <div class="flex justify-center">
-                            <img src="/storage/images/espresso.png" alt="Chiết xuất espresso"
+                            <img src="/storage/images/espresso_cup.png" alt="Chiết xuất espresso"
                                 class="h-40 object-contain drop-shadow" />
                         </div>
                         <h3 class="mt-4 text-xl font-extrabold">6. Chiết xuất espresso</h3>
