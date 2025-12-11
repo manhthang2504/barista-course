@@ -4,9 +4,9 @@
 @section('nav_text_color', 'black')
 
 @section('content')
-<section class="w-full h-24 mt-28" style="background: #F5E6D7; border-bottom: 12px solid #A97C50; border-top: 12px solid #A97C50;">
+<section class="w-full h-24 mt-36" style="background: #F5E6D7; border-bottom: 12px solid #A97C50; border-top: 12px solid #A97C50;">
     <div class="max-w-[1100px] mx-auto px-1 py-4">
-        <h1 class="text-4xl font-extrabold text-black py-4" >CHÚNG TÔI</h1>
+        <h1 class="text-4xl font-extrabold text-black" >CHÚNG TÔI</h1>
     </div>
 </section>
 

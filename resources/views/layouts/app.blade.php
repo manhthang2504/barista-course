@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <style>
         body {
-            background: #fafafa;
+            background: #ffffffff;
             margin: 0;
             padding: 0;
         }
@@ -113,7 +113,7 @@
   <nav class="navbar-custom pt-10">
     <div class="container mx-auto px-4 max-w-[1200px]">
       <div class="flex justify-between items-center">
-        <a href="#" class="flex items-center h-[90px] ml-[70px] md:ml-0">
+        <a href="{{ url('/') }}" class="flex items-center h-[90px] ml-[70px] md:ml-0">
           <img src="/storage/images/logo_footer.svg" alt="Charles Wembley" class="{{ $logoClass }}">
         </a>
 
