@@ -9,7 +9,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
-        <div class="relative z-10 ml-[150px] max-w-[650px] md:ml-0 md:max-w-[90vw] md:mt-[300px]">
+        <div class="relative z-10 ml-[150px] max-w-[650px] md:ml-8 md:max-w-[90vw] md:mt-[300px]">
             <div class="inline-block px-[8px] pr-[18px] py-[2px] bg-[rgba(60,40,30,0.18)] rounded-lg mb-[10px] text-white text-[1.8rem] font-semibold font-montserrat">KHÓA HỌC</div>
             <div class="text-[4.5rem] font-bold text-white leading-tight mb-2 font-montserrat md:text-[3.5rem]">BARISTA</div>
             <div class="text-[4.5rem] font-bold text-white mb-2 font-montserrat md:text-[3.5rem]">TỔNG HỢP</div>
@@ -37,7 +37,7 @@
                 <!-- Box 3 -->
                 <div class="rounded-[24px] shadow-md border-0 overflow-hidden bg-white w-[340px] h-[470px] mx-auto flex flex-col transition-transform duration-300 hover:scale-[1.02]">
                     <div class="h-[280px] overflow-hidden">
-                    <img src="/storage/images/Khoa_Thuc_Chien.png"
+                    <img src="/storage/images/Khoa_Thuc_Chien.webp"
                         class="w-full h-full object-cover rounded-t-[24px]" alt="Khóa pha chế tổng hợp thực chiến">
                     </div>
                     <div class="p-7 text-center flex-grow flex flex-col justify-between">
@@ -107,16 +107,17 @@
                 </div>
             </div>
 
-            <!-- VIDEO: cố định tỉ lệ 16:9 để không “đè” chiều cao text; không đặt height cố định -->
-            <div class="relative rounded-[16px] overflow-hidden shadow-lg aspect-[16/9] min-h-[340px]">
-                <video class="w-full h-full object-cover"
-                    autoplay muted loop playsinline
-                    poster="/storage/images/DSC02933.jpg" preload="metadata">
-                <source src="/storage/images/Video_gioi_thieu.mp4" type="video/mp4" />
-                Trình duyệt của bạn không hỗ trợ phát video.
-                </video>
+          <div class="relative rounded-[16px] overflow-hidden shadow-lg aspect-[16/9] min-h-[340px]">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/C75-_hYCpz4?rel=0" 
+                    title="Tan Long Barista Academy" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
             </div>
-
             </div>
         </div>
         </section>
@@ -134,27 +135,27 @@
             <div class="swiper-wrapper">
             <!-- Mỗi slide có khung tỉ lệ để giới hạn chiều cao -->
             <div class="swiper-slide relative aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden">
-                <img src="/storage/images/DSC03200.JPG" alt="Image 1"
+                <img src="/storage/images/DSC03200.webp" alt="Image 1"
                     class="absolute inset-0 w-full h-full object-cover">
             </div>
             <div class="swiper-slide relative aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden">
-                <img src="/storage/images/DSC02869.JPG" alt="Image 2"
+                <img src="/storage/images/DSC02869.webp" alt="Image 2"
                     class="absolute inset-0 w-full h-full object-cover">
             </div>
             <div class="swiper-slide relative aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden">
-                <img src="/storage/images/DSC03061.JPG" alt="Image 3"
+                <img src="/storage/images/DSC03061.webp" alt="Image 3"
                     class="absolute inset-0 w-full h-full object-cover">
             </div>
             <div class="swiper-slide relative aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden">
-                <img src="/storage/images/DSC03200.JPG" alt="Image 4"
+                <img src="/storage/images/DSC03199.webp" alt="Image 4"
                     class="absolute inset-0 w-full h-full object-cover">
             </div>
             <div class="swiper-slide relative aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden">
-                <img src="/storage/images/DSC02869.JPG" alt="Image 5"
+                <img src="/storage/images/DSC02987.webp" alt="Image 5"
                     class="absolute inset-0 w-full h-full object-cover">
             </div>
             <div class="swiper-slide relative aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden">
-                <img src="/storage/images/DSC03061.JPG" alt="Image 6"
+                <img src="/storage/images/DSC03061.webp" alt="Image 6"
                     class="absolute inset-0 w-full h-full object-cover">
             </div>
             </div>
