@@ -208,45 +208,69 @@
 
 
         <!-- Section: Đội ngũ giảng viên chuyên nghiệp -->
-        <section class="py-16 bg-white">
+            <section class="py-16 bg-white">
 
-        <!-- Băng rôn full width -->
-        <div class="w-full bg-[#a9805f] py-4 mb-12">
-            <h2 class="text-[2.3rem] text-white font-bold text-center tracking-wide">
-            ĐỘI NGŨ GIẢNG VIÊN CHUYÊN NGHIỆP
-            </h2>
-        </div>
-
-        <div class="container mx-auto px-4 max-w-[1250px]">
-            <div class="flex justify-center">
-            <div class="flex flex-col sm:flex-row items-center gap-16 max-w-5xl">
-
-                <!-- Ảnh giảng viên (cao hơn, cân đối hơn) -->
-                <div class="flex-shrink-0">
-                <img
-                    src="/storage/images/lecturer1.png"
-                    alt="Trương Thị Lệ Huyền"
-                    class="w-[420px] h-[520px] rounded-2xl object-cover shadow-2xl"
-                >
-                </div>
-
-                <!-- Thông tin giảng viên -->
-                <div class="text-left">
-                <div class="uppercase text-gray-500 text-lg mb-2 tracking-wide">Giảng viên</div>
-                <div class="text-[#8d5c2c] text-4xl font-bold uppercase leading-tight">
-                    TRƯƠNG THỊ LỆ HUYỀN
-                </div>
-                <p class="text-[#6c4c2a] mt-5 leading-relaxed text-[1.1rem] max-w-lg">
-                    Với chuyên môn chính là sáng tạo và phát triển đồ uống – từ nghiên cứu thị trường, xây dựng công thức,
-                    đào tạo đội ngũ R&amp;D đến tư vấn vận hành và thiết kế menu – hơn 15 năm làm nghề đã mang lại cho tôi
-                    những trải nghiệm và kinh nghiệm quý giá, giúp tôi hiểu rõ quy trình phía sau một ly đồ uống chất lượng.
-                    Tôi mong muốn được chia sẻ lại những kiến thức ấy bằng góc nhìn thực tế, dễ hiểu và sát với nghề.
-                </p>
-                </div>
-
+            <div class="w-full bg-[#a9805f] py-4 mb-16">
+                <h2 class="text-[2.3rem] text-white font-bold text-center tracking-wide">
+                    ĐỘI NGŨ GIẢNG VIÊN CHUYÊN NGHIỆP
+                </h2>
             </div>
+
+            <div class="container mx-auto px-4 max-w-[1250px]">
+                <div class="flex flex-col items-center gap-24">
+
+                    <div class="flex flex-col sm:flex-row items-center gap-16 max-w-5xl">
+                        <div class="flex-shrink-0">
+                            <img 
+                                src="/storage/images/lecturer1.png" 
+                                alt="Trương Thị Lệ Huyền" 
+                                class="w-[420px] h-[520px] rounded-2xl object-cover shadow-2xl"
+                            >
+                        </div>
+
+                        <div class="text-left">
+                            <div class="uppercase text-gray-500 text-lg mb-2 tracking-wide">Giảng viên</div>
+                            <div class="text-[#8d5c2c] text-4xl font-bold uppercase leading-tight">
+                                HUYỀN TRƯƠNG
+                            </div>
+                            <p class="text-[#6c4c2a] mt-5 leading-relaxed text-[1.1rem] max-w-lg text-justify">
+                                Với chuyên môn chính là sáng tạo và phát triển đồ uống – từ nghiên cứu thị trường, xây dựng công thức,
+                                đào tạo đội ngũ R&D đến tư vấn vận hành và thiết kế menu – hơn 15 năm làm nghề đã mang lại cho tôi
+                                những trải nghiệm và kinh nghiệm quý giá, giúp tôi hiểu rõ quy trình phía sau một ly đồ uống chất lượng.
+                                Tôi mong muốn được chia sẻ lại những kiến thức ấy bằng góc nhìn thực tế, dễ hiểu và sát với nghề.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col-reverse sm:flex-row items-center gap-16 max-w-5xl">
+                        
+                        <div class="text-left">
+                            <div class="uppercase text-gray-500 text-lg mb-2 tracking-wide">Giảng viên</div>
+                            <div class="text-[#8d5c2c] text-4xl font-bold uppercase leading-tight">
+                                SANG NGUYỄN
+                            </div>
+                            <p class="text-[#6c4c2a] mt-5 leading-relaxed text-[1.1rem] max-w-lg text-justify">
+                                Với nền tảng kinh nghiệm kết hợp giữa kỹ thuật pha chế, tư duy hương vị và hiểu biết về trải nghiệm khách hàng. 
+                                Là một chuyên viên phát triển đồ uống tôi luôn tiếp cận công việc theo hướng hiệu quả, thực tiễn và bền vững.
+                                <br><br>
+                                Tại Charles Wembley, khi thực hiện vai trò giảng dạy, tôi mong muốn hỗ trợ học viên không chỉ về kỹ năng chuyên môn, 
+                                mà còn về tư duy nghề nghiệp, thái độ làm việc và khả năng thích ứng với môi trường vận hành thực tế. 
+                                Tôi tin rằng một Barista giỏi không chỉ biết pha một ly cà phê ngon, mà còn hiểu rõ vì sao mình làm như vậy 
+                                và làm thế nào để đạt được hiệu quả cao nhất trong công việc hằng ngày.
+                            </p>
+                        </div>
+
+                        <div class="flex-shrink-0">
+                            <img 
+                                src="/storage/images/lecturer2.jpg" 
+                                alt="Giảng viên Sang Nguyễn" 
+                                class="w-[420px] h-[520px] rounded-2xl object-cover shadow-2xl"
+                            >
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
         </section>
         <!-- End Section: Đội ngũ giảng viên chuyên nghiệp -->
 
